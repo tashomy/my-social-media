@@ -1,0 +1,39 @@
+@supports (backdrop-filter: blur(0.75em)) {
+  .card {
+    background-color: hsla(0, 0%, 100%, 0.1) !important;
+    backdrop-filter: blur(0.5rem) !important;
+    color: #fff;
+  }
+}
+
+.card {
+  section {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.transparent-btn {
+  flex-direction: row !important;
+  align-self: flex-start !important;
+  border: none;
+  padding: 5px 10px;
+  background-color: transparent;
+  color: #fff;
+  svg {
+    cursor: pointer;
+  }
+}
+
+.crossed {
+  text-decoration: line-through;
+}
+
+.hover {
+  &:hover {
+    background-color: hsla(0, 0%, 100%, 0.1) !important;
+    backdrop-filter: blur(0.5rem) !important;
+  }
+}

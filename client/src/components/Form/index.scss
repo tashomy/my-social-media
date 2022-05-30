@@ -1,0 +1,128 @@
+.form-wrap {
+  position: sticky !important;
+  top: 0;
+  p {
+    font-size: 2rem;
+  }
+}
+
+.create-form {
+  background-color: #fff;
+  padding: 1rem;
+  color: #fff;
+
+  section {
+    display: flex;
+    flex-direction: column;
+    margin-block: 1rem;
+    label {
+      cursor: pointer;
+      font-size: 1.1rem;
+      margin-block-end: 0.3rem;
+    }
+    input {
+      max-width: 60%;
+    }
+    textarea {
+      max-width: 60%;
+      resize: none;
+    }
+
+    input,
+    textarea {
+      border-radius: 10px;
+      border: none;
+      padding: 5px 10px;
+      color: #000;
+      &:focus {
+        outline: none !important;
+      }
+    }
+  }
+}
+
+#file-upload-button {
+  background-color: #fb8332 !important;
+}
+
+@supports (backdrop-filter: blur(0.75em)) {
+  .create-form {
+    background-color: hsla(0, 0%, 100%, 0.1);
+    backdrop-filter: blur(0.5rem);
+  }
+}
+
+@media (max-width: 768px) {
+  .create-form {
+    margin-bottom: 2rem;
+    text-align: center;
+    input,
+    textarea,
+    button {
+      min-width: 80%;
+      left: 10%;
+    }
+    section {
+      align-items: center;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .create-form {
+    input,
+    textarea,
+    button {
+      min-width: 90%;
+      left: 5%;
+    }
+    section {
+      align-items: center;
+    }
+  }
+}
+
+.button-5 {
+  align-items: center;
+  background-clip: padding-box;
+  background-color: #fb8332;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: system-ui, -apple-system, system-ui, "Helvetica Neue", Helvetica,
+    Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  min-height: 3rem;
+  padding: calc(0.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
+}
+
+.button-5:hover,
+.button-5:focus {
+  background-color: #aa3434;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+.button-5:hover {
+  transform: translateY(-1px);
+}
+
+.button-5:active {
+  background-color: #c85000;
+  box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+  transform: translateY(0);
+}
