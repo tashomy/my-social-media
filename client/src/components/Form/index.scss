@@ -10,7 +10,9 @@
   background-color: #fff;
   padding: 1rem;
   color: #fff;
-
+  button {
+    min-width: 70% !important;
+  }
   section {
     display: flex;
     flex-direction: column;
@@ -21,10 +23,10 @@
       margin-block-end: 0.3rem;
     }
     input {
-      max-width: 60%;
+      max-width: 70%;
     }
     textarea {
-      max-width: 60%;
+      max-width: 70%;
       resize: none;
     }
 
@@ -59,7 +61,7 @@
     input,
     textarea,
     button {
-      min-width: 80%;
+      min-width: 80% !important;
       left: 10%;
     }
     section {
@@ -70,13 +72,21 @@
 @media (max-width: 768px) {
   .create-form {
     input,
-    textarea,
-    button {
+    textarea {
       min-width: 90%;
       left: 5%;
     }
     section {
       align-items: center;
+    }
+  }
+}
+@media (max-width: 1190px) {
+  .create-form {
+    input,
+    textarea {
+      min-width: 80%;
+      left: 10%;
     }
   }
 }

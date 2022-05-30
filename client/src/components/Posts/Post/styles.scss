@@ -7,6 +7,7 @@
 }
 
 .card {
+  margin-bottom: 1rem;
   section {
     display: flex;
     flex-direction: row-reverse;
@@ -36,4 +37,18 @@
     background-color: hsla(0, 0%, 100%, 0.1) !important;
     backdrop-filter: blur(0.5rem) !important;
   }
+}
+
+.card-title {
+  font-size: 2rem !important;
+}
+
+.card-subtitle {
+  font-size: 1.5rem !important;
+  font-weight: 300 !important;
+}
+
+.card-text {
+  margin-top: 1.5rem !important;
+  font-size: 1.2rem;
 }
