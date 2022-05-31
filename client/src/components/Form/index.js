@@ -109,7 +109,7 @@ const Form = ({ currId, setCurrId }) => {
           Submit
         </button>
         <button type="button" className="basic-btn button-5" onClick={clear}>
-          Clear
+          Clear form
         </button>
       </form>
 
