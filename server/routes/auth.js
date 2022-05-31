@@ -6,10 +6,7 @@ import passportConfig from "../passport-setup.js";
 const router = express.Router();
 passportConfig(passport);
 
-router.get(
-  "/",
-  passport.authenticate("google", { scope: ["profile", "email"] })
-);
+router.get("/", passport.authenticate("google"));
 
 router.get("/failed", failedLogin);
 router.get("/good");
