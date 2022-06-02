@@ -6,6 +6,7 @@ export const failedLogin = async (req, res) => {
 };
 
 export const loggedIn = async (req, res) => {
+  console.log(`Welcome ${req.user.email}`);
   res.send(`Welcome ${req.user.email}`);
 };
 

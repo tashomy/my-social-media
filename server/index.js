@@ -18,14 +18,13 @@ app.use(bodyParser.urlencoded({ limit: "30mb", extended: true }));
 app.use(
   cookieSession({
     name: "petly-session",
-    keys: [
-      /* secret keys */
-    ],
+    keys: ["key1", "key2"],
 
     // Cookie Options
     maxAge: 24 * 60 * 60 * 1000, // 24 hours
   })
 );
+
 app.use(passport.initialize());
 app.use(passport.session());
 
