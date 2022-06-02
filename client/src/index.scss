@@ -3,6 +3,12 @@
 @import "./components/Posts/index.scss";
 @import "./components/Posts/Post/styles.scss";
 
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
 .main-container {
   overflow-y: hidden;
   min-width: 100%;

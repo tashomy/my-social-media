@@ -12,7 +12,7 @@ const Posts = ({ setCurrId }) => {
       <CircularProgress color="primary" size={70} />
     </Col>
   ) : (
-    <Col xs={12} md={8}>
+    <Col xs={12} md={7}>
       <Row>
         {posts.map((post) => (
           <Post key={post._id} post={post} setCurrId={setCurrId} />

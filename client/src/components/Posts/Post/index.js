@@ -6,14 +6,16 @@ import icon from "../../../images/logo.png";
 import moment from "moment";
 import { useDispatch } from "react-redux";
 import { deletePost, getPosts, likePost } from "../../../actions/posts";
+import CardComponent from "./CardComponent";
 
 const Post = ({ post, setCurrId }) => {
   const dispatch = useDispatch();
   const user = true;
 
   return (
-    <Col xs={12} md={6}>
-      <Card>
+    <Col xs={12} md={12}>
+      <CardComponent post={post} setCurrId={setCurrId} />
+      {/* <Card>
         <Card.Img variant="top" src={post.selectedFile} />
         <Card.Body>
           <p>{moment(post.createdAt).fromNow()}</p>
@@ -62,7 +64,7 @@ const Post = ({ post, setCurrId }) => {
             )}
           </section>
         </Card.Body>
-      </Card>
+      </Card> */}
     </Col>
   );
 };

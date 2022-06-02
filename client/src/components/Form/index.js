@@ -47,7 +47,7 @@ const Form = ({ currId, setCurrId }) => {
   };
 
   return (
-    <Col xs={12} md={4} className="form-wrap">
+    <Col xs={12} md={5} className="form-wrap">
       <form className="create-form" onSubmit={handleSubmit}>
         <h3>{currId ? "Editing" : "Creating"} a post</h3>
         <section className="form-section">
