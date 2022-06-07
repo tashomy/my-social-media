@@ -10,4 +10,13 @@ export const loggedIn = async (req, res) => {
   res.send(`Welcome ${req.user.email}`);
 };
 
+export const logout = async (req, res, next) => {
+  req.session = null;
+  req.logout(function (err) {
+    if (err) {
+      return next(err);
+    }
+    res.redirect("/");
+  });
+};
 export default router;
