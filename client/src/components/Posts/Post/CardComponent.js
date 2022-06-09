@@ -9,7 +9,7 @@ const CardComponent = ({ post, setCurrId }) => {
   const dispatch = useDispatch();
   return (
     <div className="card-component">
-      <img src={post.selectedFile} alt="" />
+      <img src={post.selectedFile} alt="image" />
       <div className="card-content">
         <h2 className="card-title">{post.title}</h2>
         <p id="post-message" className="card-body">
@@ -17,6 +17,9 @@ const CardComponent = ({ post, setCurrId }) => {
         </p>
         <p id="post-creator" className="card-body">
           {post.creator}
+        </p>
+        <p id="post-tags" className="card-body">
+          {post.tags.map((tag) => `#${tag} `)}
         </p>
         <p id="post-moment" className="card-body">
           {moment(post.createdAt).fromNow()}
